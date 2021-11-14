@@ -1,0 +1,11 @@
+.btn{
+    background-color: $naranja;
+    color: $negro;
+    border: $negro solid 1px;
+}
+
+.btn:hover{
+    background-color: $negro;
+    color: $naranja;
+    border: $negro solid 1px;
+}

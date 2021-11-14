@@ -1,0 +1,167 @@
+nav {
+  /*     background: rgb(255,255,255);
+      background: linear-gradient(0deg, rgba(255,255,255,0.01584383753501406) 0%, rgba(0,0,0,0.8421743697478992) 100%); */
+  background-color: #000000;
+  width: 100%;
+  height: 65px;
+  position: fixed;
+  line-height: 65px;
+  text-align: center;
+  z-index: 100;
+  box-shadow: 0px 6px 5px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 0px 6px 5px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 6px 5px 0px rgba(0, 0, 0, 0.75);
+}
+nav div .logo {
+  float: left;
+  width: auto;
+  height: auto;
+  padding-left: 3rem;
+}
+nav div .logo a {
+  text-decoration: none;
+  color: #FF922E;
+  font-size: 2.5rem;
+}
+nav div .logo a:hover {
+  color: #ffffff;
+}
+nav div .main_list {
+  height: 65px;
+  float: right;
+}
+nav div .main_list ul {
+  width: 100%;
+  height: 65px;
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+nav div .main_list ul li {
+  width: auto;
+  height: 65px;
+  padding: 0;
+  padding-right: 3rem;
+}
+nav div .main_list ul li .linea {
+  width: 70%;
+  color: #F8F8F8;
+}
+nav div .main_list ul li a {
+  color: #000000;
+  text-transform: uppercase;
+}
+nav div .main_list ul li a .fa-shopping-cart {
+  color: #FF922E;
+}
+nav div .main_list ul li a:hover {
+  color: #ffffff;
+}
+nav div .main_list ul li ul .submenu #carrito {
+  position: absolute;
+  right: 0;
+  top: 100%;
+  z-index: 1;
+  background-color: #F8F8F8;
+  padding: 20px;
+  min-height: 300px;
+  min-width: 400px;
+  color: #000000;
+  display: none;
+}
+nav div .main_list ul li ul .submenu #carrito div table {
+  margin: auto;
+}
+nav div .main_list ul li ul .submenu #carrito div table tbody tr {
+  border-bottom: 1px solid lightgray;
+}
+nav div .main_list ul li ul .submenu #carrito div table tbody tr td a i {
+  color: #000000;
+}
+nav div .main_list ul li ul .submenu #carrito div table td a i:hover {
+  color: #FF922E;
+}
+nav div .main_list ul li ul .submenu #carrito .irACarrito {
+  background-color: #000000;
+  color: #ffffff;
+  padding: 0.84rem 2.14rem;
+  margin: 0;
+  border: 1px solid #000000;
+  border-radius: 0.125rem;
+  cursor: pointer;
+  white-space: normal;
+  color: #ffffff;
+  text-decoration: none;
+  transition: all 1.5s;
+}
+nav div .main_list ul li ul .submenu #carrito .irACarrito:hover {
+  box-shadow: 11px 12px 5px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 11px 12px 5px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 11px 12px 5px 0px rgba(0, 0, 0, 0.75);
+  background-color: #FF922E;
+  color: #000000;
+  border: 1px solid #000000;
+}
+
+.navbarCarrito {
+  box-sizing: unset;
+}
+
+.h1index {
+  color: #FF922E;
+}
+
+.bodyIndex {
+  background-color: #000000;
+}
+
+.footer {
+  background-color: #000000;
+  color: #FF922E;
+  width: 100%;
+  height: 85px;
+}
+
+.bodyCarrito {
+  background-color: #F8F8F8;
+}
+
+.btn {
+  background-color: #FF922E;
+  color: #000000;
+  border: #000000 solid 1px;
+}
+
+.btn:hover {
+  background-color: #000000;
+  color: #FF922E;
+  border: #000000 solid 1px;
+}
+
+.card {
+  background-color: #FF922E;
+  transition: all 1.5s;
+  border-radius: 20px;
+}
+.card .card-img-top {
+  width: 100%;
+  height: 40vh;
+  object-fit: cover;
+  border: solid 1px #000000;
+  border-radius: 25px;
+}
+
+.card:hover {
+  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+}
+
+.listaCarritoDiv {
+  box-shadow: -17px 15px 5px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: -17px 15px 5px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: -17px 15px 5px 0px rgba(0, 0, 0, 0.75);
+}
+
+/*# sourceMappingURL=style.css.map */

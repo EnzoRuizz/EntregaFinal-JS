@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+    <!-- Animate.css -->
+    <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <!-- CSS -->
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <title> Carrito | Entrega Final </title>
+</head>
+<body class="bodyCarrito">   
+    <!-- Nav -->
+      <nav class="navbar navbar-nav navbarCarrito">
+        <div class="container">
+            <div class="logo">
+                <a href="../pages/tienda.html" class="m-5"><i class="fas fa-arrow-left"></i>  Volver</a>
+                <a href="#" class="m-5">Carrito</a>
+            </div>
+        </div>
+    </nav>
+    <!-- Fin navbar -->
+    <!-- Encabezado -->
+    <div class="container">
+      <h1 class="my-5">Productos</h1>
+    </div>
+    <!-- Fin Encabezado -->
+    <!-- Contenido -->
+    <main>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-6">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>Nombre</th>
+                            <th>Cantidad</th>
+                            <th>Subtotal</th>
+                        </tr>
+                        <tbody id="tabla-carrito"></tbody>
+                    </thead>
+                </table>
+                </div>
+                <div class="col align-self-center">
+                <aside>
+                    <div class="card" style="width: 18rem;">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Resumen</h5>
+                            <table class="table">
+                            <tbody id="resumen">
+                            <tr>
+                                <th>Envío</th>
+                                <td>$250</td>
+                            </tr>
+                            </tbody>
+                            <tfoot id="tfoot">
+                            </tfoot>
+                            </table>
+                              <!-- Button trigger modal -->
+                                <button type="button" class="btn btn-dark animate__animated animate__delay-1s animate__rotateInUpRight" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                    Finalizar Compra
+                                </button>
+                                
+                                <!-- Modal -->
+                                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                        <h5 class="modal-title" id="exampleModalLabel">Ingresa tus datos para finalizar la compra</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body modalBody">
+                                            <form class="buy-form" id="buy-form" name="buyForm">
+                                                <div class="form-group">
+                                                  <label for="inputName">Nombre</label>
+                                                  <input type="text" class="form-control" id="inputName" required>
+                                                </div>
+                                                <div class="form-group">
+                                                  <label for="surname">Apellido</label>
+                                                  <input type="text" class="form-control" id="surname" required>
+                                                </div>
+                                                <div class="form-group">
+                                                  <label for="address">Dirección</label>
+                                                  <input type="text" class="form-control" id="address" required>
+                                                </div>
+                                                <div class="form-group">
+                                                  <label for="payment">Forma de pago</label>
+                                                <select class="form-control" id="payment">
+                                                  <option>Efectivo</option>
+                                                  <option>Mercado Pago</option>
+                                                  <option>Tarjetas</option>
+                                                </select>
+                                              </div>
+                                            </form>
+                                        </div>
+                                        <div class="modal-footer">
+                                        <button type="button" class="btn btn-dark" data-bs-dismiss="modal">Cerrar</button>
+                                        <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Comprar</button>
+                                        </div>
+                                    </div>
+                                    </div>
+                                    <!-- segundo Modal -->
+                                    <!-- Modal -->
+                                        <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                                            <div class="modal-dialog">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                </div>
+                                                <div class="modal-body">
+                                                Gracias por su compra
+                                                </div>
+                                                <div class="modal-footer">
+                                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                                </div>
+                                            </div>
+                                            </div>
+                                        </div>
+                                        <!-- Fin segundo modal -->
+                                </div>
+                            <!-- Fin modal -->
+                        </div>
+                    </div>
+                </aside>
+        </div>   
+    </main>   
+<!-- ||||||Scripts||||| -->
+<!-- Bootstrap -->
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+<!-- Json -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<!-- JS -->
+<script src="../assets/js/carrito.js"></script>
+        
+</body>
+
+</html>    

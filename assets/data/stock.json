@@ -1,0 +1,56 @@
+[
+  {
+        "id": 1,
+        "nombre": "Televisor 32' ",
+        "precio": 4000,
+        "imagen": "../assets/multimedia/productos/televisor.png"
+    }, 
+    {
+        "id": 2,
+        "nombre": "Teclado",
+        "precio": 3000,
+        "imagen": "../assets/multimedia/productos/teclado.png"
+    }, 
+    {
+        "id": 3,
+        "nombre": "Pc Gamer",
+        "precio": 5000,
+        "imagen": "../assets/multimedia/productos/pcGamer.png"
+    }, 
+    {
+        "id": 4,
+        "nombre": "Impresora",
+        "precio": 2000,
+        "imagen": "../assets/multimedia/productos/impresora.png"
+    }, 
+    {
+        "id": 5,
+        "nombre": "Mouse",
+        "precio": 1500,
+        "imagen": "../assets/multimedia/productos/mouse.png"
+    }, 
+    {
+        "id": 6,
+        "nombre": "Auriculares",
+        "precio": 500,
+        "imagen": "../assets/multimedia/productos/auriculares.png"
+    }, 
+    {
+        "id": 7,
+        "nombre": "Proyector",
+        "precio": 3000,
+        "imagen": "../assets/multimedia/productos/proyector.png"
+    }, 
+    {
+        "id": 8,
+        "nombre": "Tablet",
+        "precio": 2000,
+        "imagen": "../assets/multimedia/productos/tablet.png"
+    }, 
+    {
+        "id": 9,
+        "nombre": "Web Cam",
+        "precio": 4000,
+        "imagen": "../assets/multimedia/productos/audioWebcam.png"
+    }
+]   
